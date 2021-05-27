@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@font-face {font-family: "Final Frontier Old Style"; src: url("//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.eot"); src: url("//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.woff") format("woff"), url("//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.svg#Final Frontier Old Style") format("svg"); } 
+@font-face {
+  font-family: 'Final Frontier Old Style';
+  src: url('//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.eot');
+  src: url('//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/1b7bc7c5f23aa5d4563c4100c97a4cf6.svg#Final Frontier Old Style')
+      format('svg');
+}
 
 * {
   box-sizing: border-box;
@@ -57,7 +70,7 @@ body {
 }
 
 .header h1 {
-  font-family: "Final Frontier Old Style";
+  font-family: 'Final Frontier Old Style';
   font-size: 4rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -198,7 +211,7 @@ h2 {
     min-height: 70%;
     margin-bottom: 0;
     padding-bottom: 0;
-    margin-top:3rem;
+    margin-top: 3rem;
   }
   .container2 {
     margin: 0 auto;
@@ -220,8 +233,9 @@ h2 {
   .container2::-webkit-scrollbar {
     display: none;
   }
-  h1 {
-    font-size: 30px;
+  .header h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     margin-top: 1rem;
   }
 
@@ -241,8 +255,6 @@ h2 {
   }
 }
 
-}
-
 @media (max-width: 500px) {
   body {
     flex-direction: column;
@@ -250,9 +262,10 @@ h2 {
     height: 100vh;
     overflow: hidden;
   }
-  .container {
+  body .container {
     max-width: 500px;
     margin: auto;
+    margin-top: 10px;
     overflow: hidden;
     padding: 1rem;
     text-align: center;
@@ -282,12 +295,13 @@ h2 {
     display: none;
   }
 
-  h1 {
-    font-size: 30px;
-    margin-top: 1rem;
+  .header h1 {
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 
-  h2 {
+  .header h2 {
     font-size: 20px;
   }
   .selections {
@@ -296,6 +310,7 @@ h2 {
     justify-content: center;
     margin-top: 3rem;
     text-align: center;
+    margin-bottom: 2rem;
   }
   .selection {
     width: 100%;
