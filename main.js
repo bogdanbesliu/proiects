@@ -64,7 +64,7 @@ function showWinner(winner) {
     result.innerHTML = `<p class="draw">DRAW</p> `;
   }
 
-  // Show score
+  // Show score & round results in the dedicated container
   score.innerHTML = `
 <p>Player: ${scoreboard.player}</p>
 <p>Computer: ${scoreboard.computer}</p>`;
